@@ -115,9 +115,19 @@
 
 ---
 
-## 7. 文档修订记录
+## 7. 关联文档（题库与评分，与代码分离）
+
+| 文档 | 用途 |
+|------|------|
+| [`docs/TBTI_questions.md`](TBTI_questions.md) | 全量情景题正文与各选项四维 `delta`（与 `web/tbti/src/data/questions.json` 对齐） |
+| [`docs/TBTI_scoring.md`](TBTI_scoring.md) | 评分标准：归一化、十八型指纹、最近邻与边界型阈值（与 `web/tbti/src/lib/scoring.ts`、`types.json` 对齐） |
+
+---
+
+## 8. 文档修订记录
 
 
 | 日期         | 说明                                  |
 | ---------- | ----------------------------------- |
 | 2026-05-07 | 初版：整合 TBTI 命名、四维度、18 型最终代号、出题与传播建议。 |
+| 2026-05-07 | 增补 §7：指向全量题库 Markdown 与评分标准 Markdown。 |
