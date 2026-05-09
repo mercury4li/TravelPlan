@@ -1,10 +1,11 @@
 import { Disclaimer } from './Disclaimer'
 
 type Props = {
+  totalQuestions: number
   onStart: () => void
 }
 
-export function Landing({ onStart }: Props) {
+export function Landing({ totalQuestions, onStart }: Props) {
   return (
     <div className="tbti-landing">
       <p className="tbti-eyebrow">Travel Behavior Type Indicator</p>
@@ -14,7 +15,7 @@ export function Landing({ onStart }: Props) {
       <button type="button" className="tbti-btn tbti-btn--primary" onClick={onStart}>
         开始测试
       </button>
-      <p className="tbti-hint">共 20 道情景题，可随时返回修改上一题。</p>
+      <p className="tbti-hint">共 {totalQuestions} 道情景题，可随时返回修改上一题。</p>
     </div>
   )
 }

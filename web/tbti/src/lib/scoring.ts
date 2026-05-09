@@ -10,7 +10,7 @@
  * | 险   | xian | 风险雷达            | 冒险体质            |
  * | 人   | ren  | 社交发动机          | 独狼模式            |
  *
- * 可达区间：对每根轴，逐题取该题所有选项在该轴上的 min/max，再对 20 题求和得到
+ * 可达区间：对每根轴，逐题取该题所有选项在该轴上的 min/max，再对全量题目求和得到
  * [minAchievable, maxAchievable]；归一化公式：
  *   u = 0                         若 max === min
  *   u = 2 * (raw - min) / (max - min) - 1   否则
@@ -76,6 +76,17 @@ export interface RankedType {
   distance: number
 }
 
+export type SecondaryMatchKind = 'borderline' | 'complement'
+
+export interface SecondaryMatch {
+  type: TravelType
+  kind: SecondaryMatchKind
+  /** complement 模式下，副型主要补充的强特征轴 */
+  axis: AxisKey | null
+  distance: number
+  gap: number
+}
+
 export interface QuizResult {
   raw: AxisDelta
   normalized: AxisDelta
@@ -83,11 +94,20 @@ export interface QuizResult {
   ranked: RankedType[]
   primary: TravelType
   secondary: TravelType | null
+  secondaryMatch: SecondaryMatch | null
   borderline: boolean
 }
 
 /** 若榜一与榜二的距离差小于该阈值，视为边界型（并列接近） */
-export const BORDERLINE_GAP = 0.08
+export const BORDERLINE_GAP = 0.05
+/** 副型候选需要解释用户至少一根足够明显的轴向偏好 */
+export const SECONDARY_AXIS_GATE = 0.45
+/** 副型自身也要在该轴上有足够鲜明的典型特征 */
+export const SECONDARY_TYPE_AXIS_GATE = 0.45
+/** 副型在该轴上需要比主型更能解释用户 */
+export const SECONDARY_COMPLEMENT_GAIN = 0.28
+/** 互补副型不能离用户太远，否则会稀释主结果 */
+export const SECONDARY_DISTANCE_ALLOWANCE = 0.55
 
 export function computeAxisBounds(questions: Question[]): AxisBoundsMap {
   const bounds = {} as AxisBoundsMap
@@ -156,6 +176,76 @@ export function rankTypesByDistance(
     .sort((x, y) => x.distance - y.distance)
 }
 
+function sameDirection(a: number, b: number): boolean {
+  return a !== 0 && b !== 0 && Math.sign(a) === Math.sign(b)
+}
+
+function strengthInDirection(value: number, axisValue: number): number {
+  return sameDirection(value, axisValue) ? Math.abs(axisValue) : 0
+}
+
+function findSecondaryMatch(
+  normalized: AxisDelta,
+  primary: TravelType,
+  ranked: RankedType[],
+): SecondaryMatch | null {
+  const primaryRank = ranked[0]
+  const secondRank = ranked[1]
+  if (!primaryRank || !secondRank) return null
+
+  const nearestGap = secondRank.distance - primaryRank.distance
+  if (nearestGap < BORDERLINE_GAP) {
+    return {
+      type: secondRank.type,
+      kind: 'borderline',
+      axis: null,
+      distance: secondRank.distance,
+      gap: nearestGap,
+    }
+  }
+
+  let best:
+    | {
+        rankedType: RankedType
+        axis: AxisKey
+        score: number
+      }
+    | null = null
+
+  for (const candidate of ranked.slice(1)) {
+    const distanceGap = candidate.distance - primaryRank.distance
+    if (distanceGap > SECONDARY_DISTANCE_ALLOWANCE) continue
+
+    for (const axis of AXIS_KEYS) {
+      const userStrength = Math.abs(normalized[axis])
+      if (userStrength < SECONDARY_AXIS_GATE) continue
+      if (!sameDirection(normalized[axis], candidate.type.fingerprint[axis])) continue
+
+      const primaryStrength = strengthInDirection(normalized[axis], primary.fingerprint[axis])
+      const candidateStrength = Math.abs(candidate.type.fingerprint[axis])
+      const complementGain = candidateStrength - primaryStrength
+
+      if (candidateStrength < SECONDARY_TYPE_AXIS_GATE) continue
+      if (complementGain < SECONDARY_COMPLEMENT_GAIN) continue
+
+      const score = userStrength + complementGain + candidateStrength - distanceGap * 0.35
+      if (!best || score > best.score) {
+        best = { rankedType: candidate, axis, score }
+      }
+    }
+  }
+
+  if (!best) return null
+
+  return {
+    type: best.rankedType.type,
+    kind: 'complement',
+    axis: best.axis,
+    distance: best.rankedType.distance,
+    gap: best.rankedType.distance - primaryRank.distance,
+  }
+}
+
 export function computeQuizResult(
   answers: Record<string, string>,
   questions: Question[],
@@ -166,7 +256,8 @@ export function computeQuizResult(
   const normalized = normalizeScores(raw, bounds)
   const ranked = rankTypesByDistance(normalized, types)
   const primary = ranked[0]!.type
-  const secondary = ranked[1]?.type ?? null
+  const secondaryMatch = findSecondaryMatch(normalized, primary, ranked)
+  const secondary = secondaryMatch?.type ?? null
   const borderline =
     ranked.length >= 2 &&
     ranked[1]!.distance - ranked[0]!.distance < BORDERLINE_GAP
@@ -178,6 +269,7 @@ export function computeQuizResult(
     ranked,
     primary,
     secondary,
+    secondaryMatch,
     borderline,
   }
 }

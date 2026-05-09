@@ -175,7 +175,7 @@ const AXIS_KEY_LIST: AxisKey[] = ['xing', 'qian', 'xian', 'ren']
 
 const AXIS_FLAVOR_WORDS: Record<AxisKey, { left: string; right: string }> = {
   xing: { left: '更卷', right: '更冲' },
-  qian: { left: '更抠', right: '更阔' },
+  qian: { left: '更会算', right: '更舍得花' },
   xian: { left: '更稳', right: '更敢' },
   ren: { left: '更社交', right: '更独立' },
 }
