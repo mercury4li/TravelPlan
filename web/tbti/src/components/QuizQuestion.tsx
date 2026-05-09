@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import type { Question } from '../lib/scoring'
 
 type Props = {
@@ -17,10 +18,18 @@ export function QuizQuestion({
   onSelect,
   onBack,
 }: Props) {
+  const quizRef = useRef<HTMLDivElement>(null)
   const pct = Math.round(((index + 1) / total) * 100)
 
+  useEffect(() => {
+    const active = document.activeElement
+    if (active instanceof HTMLElement && quizRef.current?.contains(active)) {
+      active.blur()
+    }
+  }, [question.id])
+
   return (
-    <div className="tbti-quiz">
+    <div className="tbti-quiz" ref={quizRef}>
       <div className="tbti-quiz__top">
         <button type="button" className="tbti-btn tbti-btn--ghost" onClick={onBack}>
           ← 上一题
