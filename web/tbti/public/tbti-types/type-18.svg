@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" role="img" aria-label="一键换皮肤人物形象">
+  <rect width="1024" height="1536" fill="#fbfdf9"/>
+  <ellipse cx="510" cy="1312" rx="235" ry="44" fill="#dbe8dc" opacity=".55"/>
+
+  <g opacity=".88">
+    <polygon points="118,420 286,348 328,1110 150,1188" fill="#edf5ee"/>
+    <polygon points="286,348 414,418 438,1080 328,1110" fill="#d8eadb"/>
+    <polygon points="718,382 904,464 842,1210 680,1110" fill="#fde9ee"/>
+    <polygon points="602,472 718,382 680,1110 554,1048" fill="#f9d3de"/>
+    <polygon points="162,772 326,690 334,802 160,878" fill="#c5dcc9"/>
+    <polygon points="690,716 858,790 846,906 674,832" fill="#f7b8c9"/>
+  </g>
+
+  <g transform="translate(0 10)">
+    <path d="M326 724c-88 84-98 236-58 344 28 74 90 120 174 132 146 22 267-46 306-154 42-116 11-270-80-346-102-84-249-64-342 24Z" fill="#2f3432"/>
+    <path d="M286 784c-58 86-56 205-16 290 32 68 88 106 164 118-86-102-104-252-78-412l-70 4Z" fill="#222826"/>
+    <path d="M718 778c58 94 64 214 14 300-34 58-86 94-158 112 76-112 92-270 62-414l82 2Z" fill="#252b2a"/>
+
+    <polygon points="356,626 448,542 594,538 688,626 650,744 510,800 376,742" fill="#363b38"/>
+    <polygon points="448,542 506,474 594,538" fill="#1f2423"/>
+    <polygon points="356,626 306,712 376,742" fill="#262c2a"/>
+    <polygon points="688,626 744,714 650,744" fill="#202625"/>
+
+    <path d="M362 706c12-98 82-164 162-164 86 0 154 72 162 170 8 108-62 206-164 206-108 0-174-98-160-212Z" fill="#f2c5a4"/>
+    <polygon points="368,700 456,584 520,642 418,730" fill="#e5b493"/>
+    <polygon points="520,642 590,584 682,704 610,736" fill="#f7d2b8"/>
+    <polygon points="410,822 520,874 632,816 610,908 520,946 430,906" fill="#e3ad8c"/>
+
+    <path d="M362 708c54-40 92-90 112-146 46 70 126 104 214 134-10-96-74-174-166-184-92-8-170 64-160 196Z" fill="#2b302e"/>
+    <polygon points="350,670 438,548 386,770" fill="#171d1c"/>
+    <polygon points="474,562 590,532 706,688 578,616" fill="#222725"/>
+
+    <circle cx="452" cy="760" r="14" fill="#4b3c36"/>
+    <circle cx="588" cy="760" r="14" fill="#4b3c36"/>
+    <polygon points="436,722 492,734 484,748 432,740" fill="#4b3c36"/>
+    <polygon points="604,724 552,734 560,748 612,742" fill="#4b3c36"/>
+    <path d="M466 832c30 34 78 36 110 0" fill="none" stroke="#865d4e" stroke-width="13" stroke-linecap="round"/>
+    <polygon points="516,774 496,822 534,822" fill="#d69f84"/>
+
+    <path d="M682 584c56-34 104-18 118 26 13 42-10 90-50 108-44 20-92-6-110-48-16-36 6-66 42-86Z" fill="#f2a9be"/>
+    <polygon points="652,604 752,590 706,684" fill="#ec7899"/>
+    <polygon points="752,590 806,634 706,684" fill="#f7c3d0"/>
+    <circle cx="720" cy="638" r="18" fill="#d85d82"/>
+
+    <polygon points="398,904 644,904 720,1266 302,1266" fill="#d98262"/>
+    <polygon points="398,904 520,982 644,904 600,1110 438,1110" fill="#f2ad87"/>
+    <polygon points="302,1266 438,1110 520,1306" fill="#bf654c"/>
+    <polygon points="720,1266 600,1110 520,1306" fill="#e59372"/>
+    <polygon points="438,1110 600,1110 520,1306" fill="#d8795b"/>
+    <path d="M398 904c-46 30-92 72-122 140l78 48c34-66 68-92 106-112l-62-76Z" fill="#f0c7a5"/>
+    <path d="M644 904c48 28 90 70 122 140l-78 48c-34-66-68-92-106-112l62-76Z" fill="#f0c7a5"/>
+    <path d="M276 1044c-34 64-58 148-62 236" stroke="#f0c7a5" stroke-width="42" stroke-linecap="round" fill="none"/>
+    <path d="M766 1044c38 72 58 152 50 238" stroke="#f0c7a5" stroke-width="42" stroke-linecap="round" fill="none"/>
+
+    <circle cx="514" cy="1082" r="112" fill="#6fa37b"/>
+    <circle cx="514" cy="1082" r="74" fill="#f5fbf3"/>
+    <path d="M472 1070c16-38 58-58 96-42" fill="none" stroke="#6fa37b" stroke-width="24" stroke-linecap="round"/>
+    <path d="M568 1028l8-44 32 32-40 12Z" fill="#6fa37b"/>
+    <path d="M560 1094c-18 36-60 52-96 34" fill="none" stroke="#6fa37b" stroke-width="24" stroke-linecap="round"/>
+    <path d="M464 1128l-6 44-34-30 40-14Z" fill="#6fa37b"/>
+
+    <polygon points="368,1264 470,1264 440,1376 340,1376" fill="#f0c7a5"/>
+    <polygon points="558,1264 660,1264 690,1376 588,1376" fill="#f0c7a5"/>
+    <polygon points="322,1368 454,1368 430,1428 292,1428" fill="#455047"/>
+    <polygon points="584,1368 724,1368 752,1428 612,1428" fill="#455047"/>
+
+    <polygon points="676,900 802,962 766,1222 648,1138" fill="#424b45"/>
+    <polygon points="716,944 796,982 774,1112 694,1072" fill="#2e3732"/>
+    <circle cx="746" cy="1032" r="14" fill="#6fa37b"/>
+  </g>
+
+  <g opacity=".9">
+    <circle cx="246" cy="526" r="20" fill="#6fa37b"/>
+    <path d="M238 478l18-54 20 54 54 18-54 20-20 54-18-54-54-20 54-18Z" fill="#9bc3a1"/>
+    <path d="M782 468l16-48 18 48 48 18-48 16-18 50-16-50-50-16 50-18Z" fill="#f3a9bd"/>
+    <circle cx="840" cy="612" r="18" fill="#e97597"/>
+    <circle cx="188" cy="920" r="14" fill="#b7d3bc"/>
+  </g>
+</svg>
