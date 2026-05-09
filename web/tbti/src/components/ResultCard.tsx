@@ -31,7 +31,7 @@ export function ResultCard({ result, onRestart }: Props) {
     <div className="tbti-result">
       {/* Hero：SBTI 风格的型代号大字 + 短码 + 一句 hook，配头像 */}
       <header className="tbti-hero">
-        <p className="tbti-hero__eyebrow">你的旅格人格是</p>
+        <p className="tbti-hero__eyebrow">你的旅行人格是</p>
         <div className="tbti-hero__avatar">
           <TypePortrait typeId={primary.id} label={`${primary.code} 人物形象`} />
         </div>
