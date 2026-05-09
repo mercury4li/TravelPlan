@@ -168,13 +168,15 @@ function drawPortrait(
   ctx.restore()
 }
 
-function downloadDataUrl(dataUrl: string, filename: string) {
+function downloadBlob(blob: Blob, filename: string) {
+  const url = URL.createObjectURL(blob)
   const link = document.createElement('a')
-  link.href = dataUrl
+  link.href = url
   link.download = filename
   document.body.appendChild(link)
   link.click()
   link.remove()
+  URL.revokeObjectURL(url)
 }
 
 function formatAxisValue(value: number) {
@@ -330,6 +332,18 @@ export async function exportShareCard(
     maxWidth: 650,
   })
 
-  const dataUrl = canvas.toDataURL('image/png')
-  downloadDataUrl(dataUrl, `TBTI-${primary.enTag}-${primary.code}.png`)
+  await new Promise<void>((resolve, reject) => {
+    canvas.toBlob(
+      (blob) => {
+        if (!blob) {
+          reject(new Error('share card encode failed'))
+          return
+        }
+        downloadBlob(blob, `TBTI-${primary.enTag}-${primary.code}.jpg`)
+        resolve()
+      },
+      'image/jpeg',
+      0.82,
+    )
+  })
 }

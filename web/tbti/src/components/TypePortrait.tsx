@@ -13,8 +13,8 @@ export function TypePortrait({ typeId, label }: TypePortraitProps) {
       className="tbti-type-portrait"
       src={imagePath}
       alt={label}
-      width={1024}
-      height={1536}
+      width={512}
+      height={768}
       loading="eager"
     />
   )
