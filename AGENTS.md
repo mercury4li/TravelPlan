@@ -1,27 +1,15 @@
 <claude-mem-context>
 # Memory Context
 
-# [TravelPlan] recent context, 2026-05-09 8:57pm GMT+8
+# [TravelPlan] recent context, 2026-05-09 10:07pm GMT+8
 
 Legend: 🎯session 🔴bugfix 🟣feature 🔄refactor ✅change 🔵discovery ⚖️decision
 Format: ID TIME TYPE TITLE
 Fetch details: get_observations([IDs]) | Search: mem-search skill
 
-Stats: 50 obs (6,904t read) | 0t work
+Stats: 50 obs (7,226t read) | 0t work
 
-### May 8, 2026
-69 9:14p 🟣 用户请求为18型人格生成对应人物形象
-70 9:38p 🔵 TBTI 旅格测试 — 18型人格完整定义与项目结构
-72 9:42p ⚖️ TBTI 旅格人格形象设计 — 女性形象优先原则
-75 9:58p ⚖️ TravelPlan TBTI 18型人格人物形象生成任务启动
-76 11:40p ⚖️ TravelPlan TBTI 18型人格人物形象生成 — 分批review流程
-78 11:45p 🟣 TravelPlan TBTI 18型人格人物形象批量生成 — type-02 至 type-05 完成
-82 11:59p 🟣 TravelPlan TBTI 人格人物形象批量生成进度 — type-06 至 type-08 完成
 ### May 9, 2026
-84 12:12a 🟣 TravelPlan TBTI 18型人格人物形象生成 — 先生成样本供用户review
-85 12:15a ✅ TravelPlan TBTI 人物形象批量复制 — type-09 完成
-86 12:20a ✅ TravelPlan TBTI 人物形象批量复制 — type-10、11、12 完成
-87 12:42a 🟣 TravelPlan TBTI 18型人格人物形象生成 — 先生成样本供用户review
 88 10:31a 🔵 用户询问 Codex 桌宠使用方法
 89 " 🔵 Codex 桌宠系统工作机制与 hatch-pet 技能结构
 91 10:32a 🔵 用户本地尚未安装任何自定义 Codex 宠物
@@ -61,4 +49,15 @@ Stats: 50 obs (6,904t read) | 0t work
 166 " 🟣 TBTI ResultCard 副型倾向展示模块升级
 168 8:54p 🟣 TBTI 副型倾向 UI 完整实现 — 样式、Demo 模式与组件
 172 " 🔵 TBTI 副型功能构建成功 — Playwright networkidle 不受支持
+174 8:57p 🔵 TBTI 副型触发率统计 — 全量答题组合枚举结果
+175 9:06p 🔵 TBTI 副型倾向区块 — 生产构建与前端渲染验证通过
+177 9:13p ⚖️ TBTI q15 评分规则 — 强调与朋友出行场景
+178 " ✅ TBTI q01 选项 c 文案修订 — 强调与朋友出行场景
+179 9:15p 🔵 TBTI 题库与前端代码结构全量确认 — 用户发起题目表述审查
+180 " 🔵 TBTI 题库与18型人格完整内容确认 — 表述审查前全量基线
+183 9:16p 🔵 TBTI 题库16题评分矩阵量化分析 — 轴负载与选项分散度统计
+185 9:41p ⚖️ TBTI 题库设计原则 — 选项无需覆盖所有维度，优先体现渐进性
+188 9:49p 🔵 TBTI 题库16题各轴 range/load 全量统计 — 渐进性审查基线
+194 9:52p ✅ TBTI 题库全量重写 — 渐进性原则重构16题选项delta向量
+196 9:55p ✅ TBTI 题库最终版 — 四轴主测题量精确均衡为 4/4/4/4，构建通过
 </claude-mem-context>
