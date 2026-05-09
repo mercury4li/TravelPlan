@@ -1,0 +1,130 @@
+{
+  "types": [
+    {
+      "id": 1,
+      "code": "路书精",
+      "enTag": "MAP-KING",
+      "resonance": "行程细到「几点上厕所」，地图比你对象还熟。",
+      "fingerprint": { "xing": -0.95, "qian": 0, "xian": -0.25, "ren": -0.15 }
+    },
+    {
+      "id": 2,
+      "code": "队长瘾",
+      "enTag": "CAP-TAIN",
+      "resonance": "嘴上说民主，脚已经往左拐了。",
+      "fingerprint": { "xing": -0.45, "qian": 0, "xian": 0, "ren": -0.72 }
+    },
+    {
+      "id": 3,
+      "code": "先冲为敬",
+      "enTag": "SEND-IT",
+      "resonance": "票买了才想起来没假；相信「到了再说」。",
+      "fingerprint": { "xing": 0.88, "qian": 0.35, "xian": 0.78, "ren": 0.05 }
+    },
+    {
+      "id": 4,
+      "code": "氛围脑袋",
+      "enTag": "VIBE-FIRST",
+      "resonance": "吵架不如看日落；这趟感情 KPI 比打卡重要。",
+      "fingerprint": { "xing": 0.25, "qian": 0.55, "xian": -0.15, "ren": -0.48 }
+    },
+    {
+      "id": 5,
+      "code": "全队妈咪",
+      "enTag": "TEAM-MOM",
+      "resonance": "纸巾膏药充电宝，你是行走的医务室。",
+      "fingerprint": { "xing": -0.15, "qian": 0.25, "xian": -0.1, "ren": -0.88 }
+    },
+    {
+      "id": 6,
+      "code": "行走ATM",
+      "enTag": "PAY-GO",
+      "resonance": "「我来」说得比导航还顺；回去一看账单沉默。",
+      "fingerprint": { "xing": 0, "qian": 0.92, "xian": 0.05, "ren": -0.22 }
+    },
+    {
+      "id": 7,
+      "code": "比价CPU",
+      "enTag": "DEAL-BOT",
+      "resonance": "酒店差评关键词比好评看得还认真。",
+      "fingerprint": { "xing": -0.05, "qian": -0.95, "xian": 0, "ren": 0.08 }
+    },
+    {
+      "id": 8,
+      "code": "坏事编剧",
+      "enTag": "WHAT-IF",
+      "resonance": "脑子里已经演完丢护照版《速度与激情》。",
+      "fingerprint": { "xing": -0.25, "qian": 0, "xian": -0.95, "ren": 0.18 }
+    },
+    {
+      "id": 9,
+      "code": "都行挂件",
+      "enTag": "OK-STICK",
+      "resonance": "延误？还行。改签？也行。像人间减震器。",
+      "fingerprint": { "xing": 0.12, "qian": 0, "xian": 0.08, "ren": 0.02 }
+    },
+    {
+      "id": 10,
+      "code": "瞎溜达王",
+      "enTag": "NO-PLAN",
+      "resonance": "攻略是参考，走错路是彩蛋。",
+      "fingerprint": { "xing": 0.88, "qian": 0.12, "xian": 0.38, "ren": 0.15 }
+    },
+    {
+      "id": 11,
+      "code": "九宫格命",
+      "enTag": "GRID-LIFE",
+      "resonance": "「再等两分钟光」；朋友圈是你的旅行终点。",
+      "fingerprint": { "xing": -0.28, "qian": 0.38, "xian": 0.05, "ren": -0.38 }
+    },
+    {
+      "id": 12,
+      "code": "天黑开机",
+      "enTag": "NIGHT-MODE",
+      "resonance": "白天省电，夜市 / 酒吧 / 陌生人社交满格。",
+      "fingerprint": { "xing": 0.18, "qian": 0.42, "xian": 0.28, "ren": -0.86 }
+    },
+    {
+      "id": 13,
+      "code": "一人成团",
+      "enTag": "SOLO-RUN",
+      "resonance": "耳机一戴全世界降噪；合拍是抽奖。",
+      "fingerprint": { "xing": 0.22, "qian": 0, "xian": 0.05, "ren": 0.92 }
+    },
+    {
+      "id": 14,
+      "code": "情绪飞行模式",
+      "enTag": "AIR-MODE",
+      "resonance": "不是冷漠，是排队骂不动省流量。",
+      "fingerprint": { "xing": 0.05, "qian": 0, "xian": -0.22, "ren": 0.78 }
+    },
+    {
+      "id": 15,
+      "code": "网红过敏",
+      "enTag": "NO-HYPE",
+      "resonance": "「必打卡」三个字让你生理性警觉。",
+      "fingerprint": { "xing": 0.38, "qian": -0.28, "xian": 0.08, "ren": 0.28 }
+    },
+    {
+      "id": 16,
+      "code": "铁腿特种兵",
+      "enTag": "LEG-DAY",
+      "resonance": "微信步数像打假；回家瘫三天是售后服务。",
+      "fingerprint": { "xing": -0.78, "qian": 0, "xian": 0.45, "ren": 0.05 }
+    },
+    {
+      "id": 17,
+      "code": "脑子追尾",
+      "enTag": "IDEA-CRASH",
+      "resonance": "一小时前博物馆，此刻已在山顶；队友脑子晕车。",
+      "fingerprint": { "xing": 0.92, "qian": 0.22, "xian": 0.58, "ren": -0.18 }
+    },
+    {
+      "id": 18,
+      "code": "一键换皮肤",
+      "enTag": "SKIN-SWAP",
+      "resonance": "跟谁出门就像谁；你不是精分，是社交分辨率太高。",
+      "fingerprint": { "xing": 0.28, "qian": 0.05, "xian": 0.12, "ren": -0.42 }
+    }
+  ]
+}
