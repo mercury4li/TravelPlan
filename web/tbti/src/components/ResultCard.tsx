@@ -4,6 +4,7 @@ import { getFlavorNote } from '../lib/persona'
 import { exportShareCard } from '../lib/shareCard'
 import { AxisBars } from './AxisBars'
 import { Disclaimer } from './Disclaimer'
+import { FollowStrip } from './FollowStrip'
 import { TypePortrait } from './TypePortrait'
 
 type Props = {
@@ -57,7 +58,6 @@ export function ResultCard({ result, onRestart }: Props) {
         : exportState === 'error'
           ? '导出失败'
           : '导出分享卡'
-
   return (
     <div className="tbti-result">
       {/* Hero：SBTI 风格的型代号大字 + 短码 + 一句 hook，配头像 */}
@@ -109,6 +109,8 @@ export function ResultCard({ result, onRestart }: Props) {
           <p className="tbti-result__callout-text">{primary.calloutCp}</p>
         </div>
       </section>
+
+      <FollowStrip />
 
       <div className="tbti-actions">
         <button
