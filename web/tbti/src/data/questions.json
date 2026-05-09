@@ -2,202 +2,922 @@
   "questions": [
     {
       "id": "q01",
-      "text": "出发前一周，你的真实状态更接近？",
+      "text": "出发前一周，你通常怎么准备？",
       "options": [
-        { "id": "a", "label": "表格拉到第 5 版，交通衔接写到分钟级", "delta": { "xing": -3, "qian": 0, "xian": -1, "ren": 0 } },
-        { "id": "b", "label": "只锁机票和大交通，其它到现场再说", "delta": { "xing": 3, "qian": 1, "xian": 1, "ren": 0 } },
-        { "id": "c", "label": "每天改一版，主要看队友谁嗓门大", "delta": { "xing": 1, "qian": 0, "xian": 0, "ren": -2 } },
-        { "id": "d", "label": "有大纲就行，细节路上随缘补", "delta": { "xing": 1, "qian": 0, "xian": 0, "ren": 1 } }
+        {
+          "id": "a",
+          "label": "行程排到分钟",
+          "delta": {
+            "xing": -3,
+            "qian": 0,
+            "xian": -1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "只订大交通",
+          "delta": {
+            "xing": 3,
+            "qian": 1,
+            "xian": 1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "c",
+          "label": "跟大家边聊边改",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 0,
+            "ren": -2
+          }
+        },
+        {
+          "id": "d",
+          "label": "先有大方向就行",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 0,
+            "ren": 1
+          }
+        }
       ]
     },
     {
       "id": "q02",
-      "text": "航班突然延误 4 小时，你更可能先做什么？",
+      "text": "交通延误几小时，你先做什么？",
       "options": [
-        { "id": "a", "label": "立刻查备选航班/高铁，脑内已跑完 Plan B/C", "delta": { "xing": -2, "qian": 0, "xian": -3, "ren": 0 } },
-        { "id": "b", "label": "打开游戏或视频：到了再说", "delta": { "xing": 2, "qian": 0, "xian": 2, "ren": 1 } },
-        { "id": "c", "label": "群里直播吐槽，拉着同行逛机场或拼咖啡", "delta": { "xing": 0, "qian": 0, "xian": 0, "ren": -3 } },
-        { "id": "d", "label": "找个角落闭目养神，谁也别跟我说话", "delta": { "xing": 1, "qian": 0, "xian": 0, "ren": 2 } }
+        {
+          "id": "a",
+          "label": "先查备选路线",
+          "delta": {
+            "xing": -2,
+            "qian": 0,
+            "xian": -3,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "找点事打发",
+          "delta": {
+            "xing": 2,
+            "qian": 0,
+            "xian": 2,
+            "ren": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "拉人一起吐槽",
+          "delta": {
+            "xing": 0,
+            "qian": 0,
+            "xian": 0,
+            "ren": -3
+          }
+        },
+        {
+          "id": "d",
+          "label": "安静待着省电",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 0,
+            "ren": 2
+          }
+        }
       ]
     },
     {
       "id": "q03",
-      "text": "当地「必打卡」网红店要排 90 分钟队，你会？",
+      "text": "热门店排长队，你会怎么选？",
       "options": [
-        { "id": "a", "label": "翻差评关键词，宁可多走十分钟去平替", "delta": { "xing": 0, "qian": -3, "xian": -1, "ren": 0 } },
-        { "id": "b", "label": "来都来了，排！顺便拍照发圈", "delta": { "xing": -1, "qian": 3, "xian": 1, "ren": -1 } },
-        { "id": "c", "label": "掉头找路边摊，听到「爆款」会有警觉", "delta": { "xing": 2, "qian": -1, "xian": 1, "ren": 1 } },
-        { "id": "d", "label": "都行，队友定我就跟着排或不排", "delta": { "xing": 0, "qian": 0, "xian": 0, "ren": -1 } }
+        {
+          "id": "a",
+          "label": "看评价找平替",
+          "delta": {
+            "xing": 0,
+            "qian": -3,
+            "xian": -1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "想吃就排一会",
+          "delta": {
+            "xing": -1,
+            "qian": 3,
+            "xian": 1,
+            "ren": -1
+          }
+        },
+        {
+          "id": "c",
+          "label": "转头吃路边摊",
+          "delta": {
+            "xing": 2,
+            "qian": -1,
+            "xian": 1,
+            "ren": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "先看饿不饿",
+          "delta": {
+            "xing": 0,
+            "qian": 0,
+            "xian": 0,
+            "ren": -1
+          }
+        }
       ]
     },
     {
       "id": "q04",
-      "text": "预算已经贴近上限，明天有个付费体验很想加，你会？",
+      "text": "预算快到上限，还想加项目时？",
       "options": [
-        { "id": "a", "label": "算清楚券、里程、分期，能省则省再加", "delta": { "xing": 0, "qian": -3, "xian": -1, "ren": 0 } },
-        { "id": "b", "label": "加码体验，回去再看账单心理建设", "delta": { "xing": 1, "qian": 3, "xian": 1, "ren": 0 } },
-        { "id": "c", "label": "先把队友情绪安抚好，钱其次", "delta": { "xing": 0, "qian": 1, "xian": 0, "ren": -2 } },
-        { "id": "d", "label": "砍掉别的景点腾额度", "delta": { "xing": -2, "qian": -1, "xian": 0, "ren": 0 } }
+        {
+          "id": "a",
+          "label": "先算清能省多少",
+          "delta": {
+            "xing": 0,
+            "qian": -3,
+            "xian": -1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "难得来就体验",
+          "delta": {
+            "xing": 1,
+            "qian": 3,
+            "xian": 1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "c",
+          "label": "看大家兴致再说",
+          "delta": {
+            "xing": 0,
+            "qian": 1,
+            "xian": 0,
+            "ren": -2
+          }
+        },
+        {
+          "id": "d",
+          "label": "删一个低优先级",
+          "delta": {
+            "xing": -2,
+            "qian": -1,
+            "xian": 0,
+            "ren": 0
+          }
+        }
       ]
     },
     {
       "id": "q05",
-      "text": "同伴临时提议「明天改去另一个城市」，你会？",
+      "text": "有人提议明天换城市，你会？",
       "options": [
-        { "id": "a", "label": "当场掏出时间表：衔接、住宿、退票成本一条条算", "delta": { "xing": -3, "qian": -1, "xian": -2, "ren": 0 } },
-        { "id": "b", "label": "票能退就行，走！随机应变才像旅行", "delta": { "xing": 3, "qian": 1, "xian": 3, "ren": 0 } },
-        { "id": "c", "label": "嘴上随便你们，心里偷偷松了口气：不用赶路", "delta": { "xing": 1, "qian": 0, "xian": 1, "ren": 1 } },
-        { "id": "d", "label": "拍板：跟我走左边；民主流程走过场而已", "delta": { "xing": -2, "qian": 0, "xian": 0, "ren": -2 } }
+        {
+          "id": "a",
+          "label": "先算时间成本",
+          "delta": {
+            "xing": -3,
+            "qian": -1,
+            "xian": -2,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "能走就立刻走",
+          "delta": {
+            "xing": 3,
+            "qian": 1,
+            "xian": 3,
+            "ren": 0
+          }
+        },
+        {
+          "id": "c",
+          "label": "看体力和票况",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 1,
+            "ren": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "我来拍板路线",
+          "delta": {
+            "xing": -2,
+            "qian": 0,
+            "xian": 0,
+            "ren": -2
+          }
+        }
       ]
     },
     {
       "id": "q06",
-      "text": "同样预算下，你更常选的出行形态是？",
+      "text": "同样预算下，你更常怎么出行？",
       "options": [
-        { "id": "a", "label": "一人一包，耳机一戴全世界静音", "delta": { "xing": 1, "qian": 0, "xian": 1, "ren": 3 } },
-        { "id": "b", "label": "小队成行，群聊置顶，拼车拼饭都 OK", "delta": { "xing": -1, "qian": 0, "xian": 0, "ren": -3 } },
-        { "id": "c", "label": "都行，这次跟谁就像谁的节奏", "delta": { "xing": 1, "qian": 0, "xian": 0, "ren": -2 } },
-        { "id": "d", "label": "熟人局最佳，陌生人社交随缘", "delta": { "xing": 0, "qian": 0, "xian": 0, "ren": -1 } }
+        {
+          "id": "a",
+          "label": "一个人更自在",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 1,
+            "ren": 3
+          }
+        },
+        {
+          "id": "b",
+          "label": "小队一起热闹",
+          "delta": {
+            "xing": -1,
+            "qian": 0,
+            "xian": 0,
+            "ren": -3
+          }
+        },
+        {
+          "id": "c",
+          "label": "看这次跟谁去",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 0,
+            "ren": -2
+          }
+        },
+        {
+          "id": "d",
+          "label": "熟人局最舒服",
+          "delta": {
+            "xing": 0,
+            "qian": 0,
+            "xian": 0,
+            "ren": -1
+          }
+        }
       ]
     },
     {
       "id": "q07",
-      "text": "出国前想到「万一丢护照」，你的大脑会？",
+      "text": "想到证件可能出状况，你会？",
       "options": [
-        { "id": "a", "label": "已经演完使馆、滞留、改签全套剧本", "delta": { "xing": -1, "qian": 0, "xian": -3, "ren": 1 } },
-        { "id": "b", "label": "复印件扫描件云盘各存一份才安心", "delta": { "xing": -2, "qian": 0, "xian": -2, "ren": 0 } },
-        { "id": "c", "label": "先玩了再说，真丢了再哭", "delta": { "xing": 2, "qian": 0, "xian": 3, "ren": 0 } },
-        { "id": "d", "label": "想想就累，切换别的开心事", "delta": { "xing": 1, "qian": 0, "xian": 1, "ren": 1 } }
+        {
+          "id": "a",
+          "label": "脑补最坏剧本",
+          "delta": {
+            "xing": -1,
+            "qian": 0,
+            "xian": -3,
+            "ren": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "备份好才安心",
+          "delta": {
+            "xing": -2,
+            "qian": 0,
+            "xian": -2,
+            "ren": 0
+          }
+        },
+        {
+          "id": "c",
+          "label": "真遇到再处理",
+          "delta": {
+            "xing": 2,
+            "qian": 0,
+            "xian": 3,
+            "ren": 0
+          }
+        },
+        {
+          "id": "d",
+          "label": "知道要备但拖着",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 1,
+            "ren": 1
+          }
+        }
       ]
     },
     {
       "id": "q08",
-      "text": "要看日出但前一天暴走很累，你会？",
+      "text": "早起项目撞上很累的一天，你会？",
       "options": [
-        { "id": "a", "label": "设五个闹钟，爬也要爬起来完成 KPI", "delta": { "xing": -3, "qian": 0, "xian": 1, "ren": 0 } },
-        { "id": "b", "label": "自然醒，日出随缘变成 brunch 也行", "delta": { "xing": 2, "qian": 0, "xian": 0, "ren": 1 } },
-        { "id": "c", "label": "叫大家一起咬牙去，氛围不能垮", "delta": { "xing": -1, "qian": 0, "xian": 0, "ren": -2 } },
-        { "id": "d", "label": "独自悄悄出门，不叫醒任何人", "delta": { "xing": 1, "qian": 0, "xian": 0, "ren": 2 } }
+        {
+          "id": "a",
+          "label": "闹钟拉满也去",
+          "delta": {
+            "xing": -3,
+            "qian": 0,
+            "xian": 1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "自然醒再安排",
+          "delta": {
+            "xing": 2,
+            "qian": 0,
+            "xian": 0,
+            "ren": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "看大家状态再定",
+          "delta": {
+            "xing": -1,
+            "qian": 0,
+            "xian": 0,
+            "ren": -2
+          }
+        },
+        {
+          "id": "d",
+          "label": "想去就自己去",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 0,
+            "ren": 2
+          }
+        }
       ]
     },
     {
       "id": "q09",
-      "text": "在当地的第一晚，你更可能？",
+      "text": "到达后的第一晚，你更可能？",
       "options": [
-        { "id": "a", "label": "夜市、酒吧或 Live，和陌生人也能聊起来", "delta": { "xing": 1, "qian": 2, "xian": 2, "ren": -3 } },
-        { "id": "b", "label": "酒店躺平刷剧，恢复电量", "delta": { "xing": 1, "qian": 0, "xian": 0, "ren": 2 } },
-        { "id": "c", "label": "跟着攻略打卡夜景机位，再等两分钟光", "delta": { "xing": -2, "qian": 1, "xian": 0, "ren": -1 } },
-        { "id": "d", "label": "小队一起吃顿好的，聊天比景点重要", "delta": { "xing": 0, "qian": 1, "xian": 0, "ren": -2 } }
+        {
+          "id": "a",
+          "label": "出去逛到尽兴",
+          "delta": {
+            "xing": 1,
+            "qian": 2,
+            "xian": 2,
+            "ren": -3
+          }
+        },
+        {
+          "id": "b",
+          "label": "回房间回血",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 0,
+            "ren": 2
+          }
+        },
+        {
+          "id": "c",
+          "label": "按清单打卡夜景",
+          "delta": {
+            "xing": -2,
+            "qian": 1,
+            "xian": 0,
+            "ren": -1
+          }
+        },
+        {
+          "id": "d",
+          "label": "吃顿好的就行",
+          "delta": {
+            "xing": 0,
+            "qian": 1,
+            "xian": 0,
+            "ren": -2
+          }
+        }
       ]
     },
     {
       "id": "q10",
-      "text": "到一个热门机位，人多光线一般，你会？",
+      "text": "拍照时光线一般，你会？",
       "options": [
-        { "id": "a", "label": "「再等两分钟」直到九宫格满意", "delta": { "xing": -1, "qian": 1, "xian": 0, "ren": -2 } },
-        { "id": "b", "label": "随手两张走人，体验比出片重要", "delta": { "xing": 2, "qian": 1, "xian": 1, "ren": 1 } },
-        { "id": "c", "label": "直接放弃网红点，换冷门巷子", "delta": { "xing": 2, "qian": -1, "xian": 1, "ren": 1 } },
-        { "id": "d", "label": "帮全队排队打光教 pose", "delta": { "xing": -1, "qian": 0, "xian": 0, "ren": -3 } }
+        {
+          "id": "a",
+          "label": "等到画面满意",
+          "delta": {
+            "xing": -1,
+            "qian": 1,
+            "xian": 0,
+            "ren": -2
+          }
+        },
+        {
+          "id": "b",
+          "label": "随手拍完继续玩",
+          "delta": {
+            "xing": 2,
+            "qian": 1,
+            "xian": 1,
+            "ren": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "换个角度试试",
+          "delta": {
+            "xing": 2,
+            "qian": -1,
+            "xian": 1,
+            "ren": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "先帮别人拍好",
+          "delta": {
+            "xing": -1,
+            "qian": 0,
+            "xian": 0,
+            "ren": -3
+          }
+        }
       ]
     },
     {
       "id": "q11",
-      "text": "下单前看到「再凑 30 块包邮/升舱券」，你会？",
+      "text": "看到优惠规则很复杂，你会？",
       "options": [
-        { "id": "a", "label": "翻规则凑满，时间不是问题", "delta": { "xing": 0, "qian": -3, "xian": 0, "ren": 0 } },
-        { "id": "b", "label": "不算了直接付，心累比差价贵", "delta": { "xing": 1, "qian": 3, "xian": 1, "ren": 0 } },
-        { "id": "c", "label": "拉队友一起凑，顺便聊天", "delta": { "xing": 0, "qian": -1, "xian": 0, "ren": -2 } },
-        { "id": "d", "label": "觉得套路烦，干脆不买或换平台", "delta": { "xing": 1, "qian": -1, "xian": 0, "ren": 1 } }
+        {
+          "id": "a",
+          "label": "研究到能叠券",
+          "delta": {
+            "xing": 0,
+            "qian": -3,
+            "xian": 0,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "不算了直接付",
+          "delta": {
+            "xing": 1,
+            "qian": 3,
+            "xian": 1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "c",
+          "label": "问问同行要不要",
+          "delta": {
+            "xing": 0,
+            "qian": -1,
+            "xian": 0,
+            "ren": -2
+          }
+        },
+        {
+          "id": "d",
+          "label": "嫌麻烦换一家",
+          "delta": {
+            "xing": 1,
+            "qian": -1,
+            "xian": 0,
+            "ren": 1
+          }
+        }
       ]
     },
     {
       "id": "q12",
-      "text": "一日徒步路线有「休闲版」和「拉练版」，你会选？",
+      "text": "徒步路线有轻松版和强度版，你选？",
       "options": [
-        { "id": "a", "label": "拉练版，步数不打满不如回家", "delta": { "xing": -2, "qian": 0, "xian": 3, "ren": 0 } },
-        { "id": "b", "label": "休闲版，留力气晚上吃喝", "delta": { "xing": 2, "qian": 1, "xian": 0, "ren": 0 } },
-        { "id": "c", "label": "听领队或多数票，怎样都行", "delta": { "xing": 0, "qian": 0, "xian": 1, "ren": -1 } },
-        { "id": "d", "label": "拉练版但我一个人走自己的节奏", "delta": { "xing": -1, "qian": 0, "xian": 2, "ren": 2 } }
+        {
+          "id": "a",
+          "label": "强度版才过瘾",
+          "delta": {
+            "xing": -2,
+            "qian": 0,
+            "xian": 3,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "轻松版留体力",
+          "delta": {
+            "xing": 2,
+            "qian": 1,
+            "xian": 0,
+            "ren": 0
+          }
+        },
+        {
+          "id": "c",
+          "label": "跟多数人选择",
+          "delta": {
+            "xing": 0,
+            "qian": 0,
+            "xian": 1,
+            "ren": -1
+          }
+        },
+        {
+          "id": "d",
+          "label": "强度版但独走",
+          "delta": {
+            "xing": -1,
+            "qian": 0,
+            "xian": 2,
+            "ren": 2
+          }
+        }
       ]
     },
     {
       "id": "q13",
-      "text": "上午还在博物馆，中午突然想去山顶看全景，你会？",
+      "text": "临时空出半天，你会怎么用？",
       "options": [
-        { "id": "a", "label": "按原计划把博物馆逛完再说", "delta": { "xing": -3, "qian": 0, "xian": -1, "ren": 0 } },
-        { "id": "b", "label": "立刻打车改行程，灵感最大", "delta": { "xing": 3, "qian": 1, "xian": 2, "ren": 0 } },
-        { "id": "c", "label": "征求全队：少数服从多数", "delta": { "xing": -1, "qian": 0, "xian": 0, "ren": -2 } },
-        { "id": "d", "label": "我自己脱队上山，晚上汇合", "delta": { "xing": 2, "qian": 0, "xian": 2, "ren": 2 } }
+        {
+          "id": "a",
+          "label": "补完原计划清单",
+          "delta": {
+            "xing": -3,
+            "qian": 0,
+            "xian": -1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "立刻找新去处",
+          "delta": {
+            "xing": 3,
+            "qian": 1,
+            "xian": 2,
+            "ren": 0
+          }
+        },
+        {
+          "id": "c",
+          "label": "商量一个舒服点",
+          "delta": {
+            "xing": -1,
+            "qian": 0,
+            "xian": 0,
+            "ren": -2
+          }
+        },
+        {
+          "id": "d",
+          "label": "自己溜达半天",
+          "delta": {
+            "xing": 2,
+            "qian": 0,
+            "xian": 2,
+            "ren": 2
+          }
+        }
       ]
     },
     {
       "id": "q14",
-      "text": "队友因为小事吵起来，你更可能？",
+      "text": "同行人情绪有点僵，你更可能？",
       "options": [
-        { "id": "a", "label": "当和事佬，提议先看日落或吃点好的", "delta": { "xing": 1, "qian": 1, "xian": -1, "ren": -2 } },
-        { "id": "b", "label": "躲开独处充电，省流量", "delta": { "xing": 1, "qian": 0, "xian": 0, "ren": 2 } },
-        { "id": "c", "label": "直接拍板停战：接下来听我的", "delta": { "xing": -2, "qian": 0, "xian": 0, "ren": -2 } },
-        { "id": "d", "label": "觉得自己也快炸了，先去买杯喝的冷静", "delta": { "xing": 0, "qian": 1, "xian": -2, "ren": 1 } }
+        {
+          "id": "a",
+          "label": "先把气氛拉回",
+          "delta": {
+            "xing": 1,
+            "qian": 1,
+            "xian": -1,
+            "ren": -2
+          }
+        },
+        {
+          "id": "b",
+          "label": "暂时独处省电",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 0,
+            "ren": 2
+          }
+        },
+        {
+          "id": "c",
+          "label": "直接定下一步",
+          "delta": {
+            "xing": -2,
+            "qian": 0,
+            "xian": 0,
+            "ren": -2
+          }
+        },
+        {
+          "id": "d",
+          "label": "买杯喝的冷静",
+          "delta": {
+            "xing": 0,
+            "qian": 1,
+            "xian": -2,
+            "ren": 1
+          }
+        }
       ]
     },
     {
       "id": "q15",
-      "text": "订酒店时你的默认策略更接近？",
+      "text": "订住宿时，你最先看什么？",
       "options": [
-        { "id": "a", "label": "三家比价 + 地图测距 + 差评关键词筛查", "delta": { "xing": -1, "qian": -3, "xian": -1, "ren": 0 } },
-        { "id": "b", "label": "地段好评就行，贵一点省心", "delta": { "xing": -1, "qian": 3, "xian": 0, "ren": 0 } },
-        { "id": "c", "label": "谁订都行，我只看能不能Late checkout", "delta": { "xing": 1, "qian": 0, "xian": 1, "ren": 1 } },
-        { "id": "d", "label": "主打社交氛围：青旅公区或民宿客厅", "delta": { "xing": 1, "qian": 0, "xian": 1, "ren": -3 } }
+        {
+          "id": "a",
+          "label": "价格位置差评",
+          "delta": {
+            "xing": -1,
+            "qian": -3,
+            "xian": -1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "地段好就省心",
+          "delta": {
+            "xing": -1,
+            "qian": 3,
+            "xian": 0,
+            "ren": 0
+          }
+        },
+        {
+          "id": "c",
+          "label": "睡得舒服优先",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 1,
+            "ren": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "公区氛围要好",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 1,
+            "ren": -3
+          }
+        }
       ]
     },
     {
       "id": "q16",
-      "text": "接到「航班取消」推送的那一刻，你会？",
+      "text": "遇到景点临时闭馆，你会？",
       "options": [
-        { "id": "a", "label": "一边改签一边重做当日动线", "delta": { "xing": -3, "qian": -1, "xian": -2, "ren": 0 } },
-        { "id": "b", "label": "先截图发群吐槽，再一起看怎么办", "delta": { "xing": 0, "qian": 0, "xian": 0, "ren": -3 } },
-        { "id": "c", "label": "懒得折腾，先看剧点外卖等通知", "delta": { "xing": 2, "qian": 1, "xian": 2, "ren": 1 } },
-        { "id": "d", "label": "独自搞定改签，搞定再说一声", "delta": { "xing": -2, "qian": -1, "xian": -1, "ren": 2 } }
+        {
+          "id": "a",
+          "label": "马上重排路线",
+          "delta": {
+            "xing": -3,
+            "qian": -1,
+            "xian": -2,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "一起现场找替代",
+          "delta": {
+            "xing": 0,
+            "qian": 0,
+            "xian": 0,
+            "ren": -3
+          }
+        },
+        {
+          "id": "c",
+          "label": "干脆休息一下",
+          "delta": {
+            "xing": 2,
+            "qian": 1,
+            "xian": 2,
+            "ren": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "自己查完再说",
+          "delta": {
+            "xing": -2,
+            "qian": -1,
+            "xian": -1,
+            "ren": 2
+          }
+        }
       ]
     },
     {
       "id": "q17",
-      "text": "长途交通上邻座开始搭讪，你会？",
+      "text": "路上有人主动聊天，你会？",
       "options": [
-        { "id": "a", "label": "能聊一路，顺便交换攻略与段子", "delta": { "xing": 0, "qian": 0, "xian": 1, "ren": -3 } },
-        { "id": "b", "label": "礼貌答两句然后戴耳机闭目", "delta": { "xing": 0, "qian": 0, "xian": 0, "ren": 2 } },
-        { "id": "c", "label": "假装 asleep / 工作消息很忙", "delta": { "xing": 0, "qian": 0, "xian": 0, "ren": 2 } },
-        { "id": "d", "label": "拉队友一起聊，场面热闹一点", "delta": { "xing": 0, "qian": 0, "xian": 0, "ren": -2 } }
+        {
+          "id": "a",
+          "label": "聊开还能换攻略",
+          "delta": {
+            "xing": 0,
+            "qian": 0,
+            "xian": 1,
+            "ren": -3
+          }
+        },
+        {
+          "id": "b",
+          "label": "礼貌聊两句",
+          "delta": {
+            "xing": 0,
+            "qian": 0,
+            "xian": 0,
+            "ren": 2
+          }
+        },
+        {
+          "id": "c",
+          "label": "戴耳机装忙",
+          "delta": {
+            "xing": 0,
+            "qian": 0,
+            "xian": 0,
+            "ren": 2
+          }
+        },
+        {
+          "id": "d",
+          "label": "拉同行一起聊",
+          "delta": {
+            "xing": 0,
+            "qian": 0,
+            "xian": 0,
+            "ren": -2
+          }
+        }
       ]
     },
     {
       "id": "q18",
       "text": "攻略资料你会怎么带？",
       "options": [
-        { "id": "a", "label": "打印装订 + 离线地图多层备份", "delta": { "xing": -3, "qian": -1, "xian": -2, "ren": 0 } },
-        { "id": "b", "label": "手机随便滑，点到哪走到哪", "delta": { "xing": 3, "qian": 0, "xian": 1, "ren": 1 } },
-        { "id": "c", "label": "收藏夹一堆链接，路上再看心情点开", "delta": { "xing": 1, "qian": 0, "xian": 1, "ren": 0 } },
-        { "id": "d", "label": "主要靠队友的路书，我当挂件", "delta": { "xing": 1, "qian": 0, "xian": 0, "ren": -1 } }
+        {
+          "id": "a",
+          "label": "离线备份齐全",
+          "delta": {
+            "xing": -3,
+            "qian": -1,
+            "xian": -2,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "边走边搜就行",
+          "delta": {
+            "xing": 3,
+            "qian": 0,
+            "xian": 1,
+            "ren": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "收藏几个备用",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "d",
+          "label": "主要看别人路书",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 0,
+            "ren": -1
+          }
+        }
       ]
     },
     {
       "id": "q19",
-      "text": "回国后发现这比预期多花了一截，你第一反应更接近？",
+      "text": "旅行花费超预期，你第一反应？",
       "options": [
-        { "id": "a", "label": "打开表格复盘每一笔，下次迭代模型", "delta": { "xing": -1, "qian": -3, "xian": -1, "ren": 0 } },
-        { "id": "b", "label": "沉默一秒：体验无价，下次还敢", "delta": { "xing": 1, "qian": 3, "xian": 1, "ren": 0 } },
-        { "id": "c", "label": "先把合照修好发朋友圈再想钱", "delta": { "xing": 0, "qian": 1, "xian": 0, "ren": -2 } },
-        { "id": "d", "label": "无所谓啦数字而已", "delta": { "xing": 1, "qian": 0, "xian": 1, "ren": 1 } }
+        {
+          "id": "a",
+          "label": "回去认真复盘",
+          "delta": {
+            "xing": -1,
+            "qian": -3,
+            "xian": -1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "b",
+          "label": "体验值就行",
+          "delta": {
+            "xing": 1,
+            "qian": 3,
+            "xian": 1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "c",
+          "label": "先修图再想钱",
+          "delta": {
+            "xing": 0,
+            "qian": 1,
+            "xian": 0,
+            "ren": -2
+          }
+        },
+        {
+          "id": "d",
+          "label": "下次稍微收着",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 1,
+            "ren": 1
+          }
+        }
       ]
     },
     {
       "id": "q20",
-      "text": "和不同性格的朋友出门，你的节奏会更像谁？",
+      "text": "和不同朋友出门，你的节奏会？",
       "options": [
-        { "id": "a", "label": "不自觉同步他们的消费习惯与作息，像换壳", "delta": { "xing": 2, "qian": 1, "xian": 1, "ren": -3 } },
-        { "id": "b", "label": "我永远是我，差别只在忍耐时长", "delta": { "xing": 0, "qian": 0, "xian": 0, "ren": 2 } },
-        { "id": "c", "label": "都行，怎样配合都不太费劲", "delta": { "xing": 1, "qian": 0, "xian": 1, "ren": 0 } },
-        { "id": "d", "label": "我来定锚点，别人在我框架里发挥", "delta": { "xing": -3, "qian": 0, "xian": 0, "ren": -2 } }
+        {
+          "id": "a",
+          "label": "自然同步对方",
+          "delta": {
+            "xing": 2,
+            "qian": 1,
+            "xian": 1,
+            "ren": -3
+          }
+        },
+        {
+          "id": "b",
+          "label": "基本保持自己",
+          "delta": {
+            "xing": 0,
+            "qian": 0,
+            "xian": 0,
+            "ren": 2
+          }
+        },
+        {
+          "id": "c",
+          "label": "怎么配合都行",
+          "delta": {
+            "xing": 1,
+            "qian": 0,
+            "xian": 1,
+            "ren": 0
+          }
+        },
+        {
+          "id": "d",
+          "label": "我会定大框架",
+          "delta": {
+            "xing": -3,
+            "qian": 0,
+            "xian": 0,
+            "ren": -2
+          }
+        }
       ]
     }
   ]
