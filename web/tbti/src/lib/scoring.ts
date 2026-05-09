@@ -53,7 +53,14 @@ export interface TravelType {
   id: number
   code: string
   enTag: string
-  resonance: string
+  /** 海报金句：10–18 字，用于结果首屏与分享卡主标题 */
+  hook: string
+  /** 画像描述：1–2 句，用于结果页「旅行人格描述」与分享文案主体 */
+  description: string
+  /** 详情自嘲：2–3 句，用于结果详情段落与"自嘲文案"复制 */
+  selfRoast: string
+  /** @ 队友传播句：发到群聊 / 朋友圈，制造"被认领"钩子 */
+  calloutCp: string
   fingerprint: AxisDelta
 }
 
